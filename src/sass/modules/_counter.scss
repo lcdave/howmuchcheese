@@ -1,0 +1,64 @@
+.mod_counter {
+	position: relative;
+	font-size: 40px;
+	margin-bottom: 70px;
+}
+
+.counter_title {
+	margin-bottom: 20px;
+}
+
+.counter_content {
+	background: $color_wheat;
+	margin: 0 auto;
+	z-index: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	-webkit-box-shadow: 3px 2px 15px 2px rgba(0,0,0,0.45);
+	box-shadow: 3px 2px 15px 2px rgba(0,0,0,0.45);
+}
+
+.counter_icon {
+	font-size: 60px;
+	padding-top: 26px;
+	margin-bottom: 7px;
+}
+
+.counter_counter {
+	font-size: 80px;
+}
+
+.counter_add,
+.counter_remove {
+	position: absolute;
+	background: $color_wheat;
+	line-height: 0;
+	width: 80px;
+	height: 80px;
+	z-index: 2;
+	border-radius: 50%;
+	-webkit-box-shadow: 3px 2px 15px 2px rgba(0,0,0,0.45);
+	box-shadow: 3px 2px 15px 2px rgba(0,0,0,0.45);
+	cursor: pointer;
+	font-size: 40px;
+}
+
+.counter_remove {
+	left: 35px;
+	top: 172px;
+
+	&.disabled {
+		color: $color_donkey_brown;
+	}
+}
+
+.counter_add {
+	right: 40px;
+	top: 176px;
+
+	i {
+		margin-left: 3px;
+		margin-top: 3px;
+	}
+}

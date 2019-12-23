@@ -1,0 +1,11 @@
+.mod_amount {
+	font-size: 70px;
+	line-height: 0.7;
+}
+
+.amount_top {
+	&:after {
+		content: "-";
+		display: block;
+	}
+}

@@ -10,14 +10,16 @@ class Card extends React.Component {
 	}
 
 	onCardClick() {
-		console.log(this.props.type);
-		navigate('/fondue');
+		navigate('/' + this.props.type);
 	}
+
 	render() {
 		return (
-			<div className="mod_card" onClick={this.onCardClick}>
+			<button className="mod_card"
+				 onClick={this.onCardClick}
+				 onKeyDown={this.onCardClick}>
 				<div className="card_title">{this.props.title}</div>
-			</div>
+			</button>
 		);
 	}
 }
