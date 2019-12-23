@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaRegUser } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
 
 class Counter extends React.Component {
 	constructor(props) {
@@ -87,18 +90,18 @@ class Counter extends React.Component {
 					<div className="counter_title">{this.props.type} für</div>
 					<div className="counter_content">
 						<div className="counter_icon">
-							<i className="far fa-user" />
+							<FaRegUser />
 						</div>
 						<div className="counter_counter">{this.state.counter}</div>
 						<button className={this.state.disabled ? 'counter_remove disabled' : 'counter_remove'}
 							 onClick={this.onRemoveClick}
 							 onKeyDown={this.onRemoveClick}>
-							<i className="fas fa-minus" />
+							<FaMinus />
 						</button>
 						<button className="counter_add"
 							 onClick={this.onAddClick}
 							 onKeyDown={this.onAddClick}>
-							<i className="fas fa-plus" />
+							<FaPlus />
 						</button>
 					</div>
 				</div>

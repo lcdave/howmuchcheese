@@ -5,6 +5,7 @@ import Counter from "../components/Counter";
 import {Helmet} from "react-helmet";
 import Header from "../components/Header";
 
+
 const Fondue = () => (
   <Layout>
       <Helmet>

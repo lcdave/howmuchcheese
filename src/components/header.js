@@ -1,6 +1,8 @@
 import React from 'react';
 import {navigate} from "../../.cache/gatsby-browser-entry";
 import { Link } from "gatsby"
+import { FaLongArrowAltLeft } from "react-icons/fa";
+
 
 class Header extends React.Component {
 	constructor(props) {
@@ -23,7 +25,7 @@ class Header extends React.Component {
 		if (this.props.showHeaderBack) {
 			headerBack =
 				<Link to="/" className="header_back">
-					<i className="fas fa-long-arrow-alt-left" />
+					<FaLongArrowAltLeft />
 				</Link>
 			;
 		}
