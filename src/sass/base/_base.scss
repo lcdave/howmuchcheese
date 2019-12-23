@@ -2,3 +2,8 @@ body {
 	font-family: 'Cookie', cursive;
 	background-color: #e3b04b;
 }
+
+:focus {
+	outline: none;
+	border: none
+}
